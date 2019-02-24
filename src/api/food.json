@@ -6,7 +6,7 @@
             "fat": "15",
             "calroie": "312",
             "ingredients": "Potatoes, Vegetable Oil, Citric Acid [Preservative]), etc",
-            "img": "images/french-fries",
+            "img": "images/french-fries.jpg",
             "id": 1
         },
         {
@@ -15,7 +15,7 @@
             "fat": "26",
             "calroie": "290",
             "ingredients": "Meat trimmings and fat,salt, garlic, and paprika, etc",
-            "img": "images/hot-dogs",
+            "img": "images/hot-dogs.jpg",
             "id": 2
         },
         {
@@ -24,7 +24,7 @@
             "fat": "40",
             "calroie": "541",
             "ingredients": "pork, water, potassium lactate, salt, sugar, sodium phosphate, sodium diacetate, sodium erythorbate, sodium nitrite, smoke.",
-            "img": "images/bacon",
+            "img": "images/bacon.jpg",
             "id": 3
         },
         {
@@ -33,7 +33,7 @@
             "fat": "4.3",
             "calroie": "375",
             "ingredients": "salt, artificial butter flavor,etc",
-            "img": "images/theatre-popcorn",
+            "img": "images/theatre-popcorn.jpg",
             "id": 4
         },
         {
@@ -42,7 +42,7 @@
             "fat": "14",
             "calroie": "412",
             "ingredients": "GLYCERIN, STRAWBERRIES, WHITE GRAPE JUICE CONCENTRATE, WATER, MODIFIED TAPIOCA STARCH, PECTIN, CITRIC ACID, etc",
-            "img": "images/toaster-pastries",
+            "img": "images/toaster-pastries.jpg",
             "id": 5
         },
         {
@@ -51,7 +51,7 @@
             "fat": "10",
             "calroie": "266",
             "ingredients": "Fresh Dough. Unbleached enriched wheat flour, water, sugar, soybean oil, salt, yeast, etc",
-            "img": "images/pizza",
+            "img": "images/pizza.jpg",
             "id": 6
         },
         {
@@ -87,7 +87,7 @@
             "fat": "0",
             "calroie": "42",
             "ingredients": "Coca-Cola (Classic) Carbonated water, high fructose corn syrup",
-            "img": "images/drinks",
+            "img": "images/drinks.jpg",
             "id": 10
         },
         {
@@ -96,8 +96,44 @@
             "fat": "11",
             "calroie": "207",
             "ingredients": "milk solids-not-fat (skim-milk powder), sugar, gelatin (or other suitable stabilizer), egg and flavouring,etc",
-            "img": "images/ice-cream",
+            "img": "images/ice-cream.jpg",
             "id": 11
+        },
+        {
+            "title": "Coke",
+            "body": "Drinking soda, however, has far more health risks than many of us may realize. Regular consumption of sugary drinks is linked to numerous health problems including diabetes, heart disease, asthma, COPD and obesity",
+            "fat": "0",
+            "calroie": "41",
+            "ingredients": "Carbonated water,Sugar ,Caffeine,etc",
+            "img": "images/coke.jpg",
+            "id": 12
+        },
+        {
+            "title": "Fruit Juice",
+            "body": "You'd think juice would be healthyâ€”it's made from fruit, after all. Problem is, while fruit is rich in fiber, juice is not. So even if you opt for 100% fruit juice and avoid drinks with added sugar (like cranberry or grape cocktail), they're still high in the sweet stuff. For instance, a cup of grape juice contains 36 grams of sugar and a cup of apple has 31 gramsâ€”not far off from what you'll find in a can of lemon-lime soda, which racks up 44 grams.",
+            "fat": "0",
+            "calroie": "54",
+            "ingredients": "Water, high fructose corn syrup, citric acid, natural and artificial flavors, pectin, acacia gum, etc",
+            "img": "images/fruit-juice.jpg",
+            "id": 13
+        },
+        {
+            "title": "Cake",
+            "body": "No matter how many recipes you may see for \"healthy\" cakes, cakes aren't healthy. However, some cakes are less unhealthy than others, and if you bake your own cakes, you can make substitutions to improve their nutritional profile. Choosing angel food cake, for example, allows you to have a slice of cake without consuming the very high amounts of calories, fat, sugar and sodium found in many frosted cakes.",
+            "fat": "9.9",
+            "calroie": "245",
+            "ingredients": "Sugar,baking powder,salt,eggs,etc",
+            "img": "images/cake.jpg",
+            "id": 14
+        },
+        {
+            "title": "Protein bar",
+            "body": "For people who are constantly on the go, nutrition bars can offer a quick, convenient, and easily portable source of calories and nutrition (because nothing good comes from being hangry in a meeting). However, according to WebMD, \"not all bars are created equal.\"Â  \"some of the bars have as much sugar and as much saturated fat as a candy bar. So use them in moderation.\" according to American Dietetic Association, ",
+            "fat": "13",
+            "calroie": "414",
+            "ingredients": "Soy Protein Isolate. Sara Deeter,Calcium Caseinate. Grace Ling,etc",
+            "img": "images/p-bar.jpg",
+            "id": 15
         }
     ]
 }
