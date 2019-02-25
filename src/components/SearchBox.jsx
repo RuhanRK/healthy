@@ -45,6 +45,8 @@ const SearchBox = props => {
             // check selectedFood is available
             if (selectedFood[0]) {
                 props.selectFood(selectedFood[0]);
+                // clear input field
+                setText("");
             } else {
                 props.foodNotFound();
             }
@@ -65,6 +67,8 @@ const SearchBox = props => {
 
         // clear suggetion box
         setSuggestions([]);
+        // clear inpput field
+        setText("");
     };
 
     return (
