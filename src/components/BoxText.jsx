@@ -6,7 +6,11 @@ const BoxText = ({ selectedFood }) => {
     return (
         <React.Fragment>
             <Row>
-                <Col sm={12} md={4} className="align-self-center text-center">
+                <Col
+                    sm={12}
+                    md={4}
+                    className="align-self-center text-center own-mb"
+                >
                     <img
                         width={150}
                         height={150}

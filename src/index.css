@@ -9,7 +9,7 @@
 body {
     height: 100vh;
     width: 100vw;
-    background: #f3f4f7 url("./imgs/healthy.svg") no-repeat center left /
+    background: #f3f4f7 url("./imgs/healthy.svg") no-repeat center center /
         contain;
     font-family: "Cinzel", serif;
 }
@@ -60,4 +60,18 @@ blockquote p::after {
 blockquote p::after {
     content: "”";
     margin: -1rem -4rem 0 0;
+}
+
+/* responsive ness */
+
+@media (max-width: 560px) {
+    body {
+        font-size: 12px !important;
+    }
+    .nav-bg p {
+        font-size: 1.5rem;
+    }
+    .own-mb {
+        margin-bottom: 1.5rem !important;
+    }
 }
