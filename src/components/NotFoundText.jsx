@@ -5,8 +5,9 @@ const NotFoundText = () => {
         <blockquote>
             <p>
                 <strong>Oh Ho!,</strong> Looks like this food Isn't available in
-                our database; Please <strong>Keep Calm & Drink Water.,</strong>{" "}
-                Search Again please :)
+                our database; Please{" "}
+                <strong>Keep Calm & Drink a glass of Water,</strong> Search
+                Again please :)
             </p>
         </blockquote>
     );

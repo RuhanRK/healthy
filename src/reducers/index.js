@@ -16,7 +16,7 @@ const foodReducer = (state = initialState, action) => {
                 foodNotFound: false
             };
         case actions.FOOD_NOT_FOUND:
-            return { ...state, foodNotFound: true };
+            return { ...state, foodNotFound: true, selectedFood: null };
         default:
             return state;
     }
