@@ -9,6 +9,7 @@ import foodReducer from "./reducers";
 import * as serviceWorker from "./serviceWorker";
 import "./index.css";
 
+// create redux store and setup dev tool
 const store = createStore(
     foodReducer,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()

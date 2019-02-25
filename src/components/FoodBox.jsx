@@ -4,7 +4,7 @@ import BoxText from "./BoxText";
 
 const FoodBox = () => {
     return (
-        <Media className="bg-info p-3 shadow  bg-white rounded">
+        <Media className="bg-info p-3 mt-5 shadow  bg-white rounded">
             <React.Fragment>
                 <BoxText />
             </React.Fragment>

@@ -6,6 +6,6 @@ import * as actions from "./actions";
 export const selectFood = food => {
     return {
         type: actions.FOOD_SELECT,
-        payload: song
+        payload: food
     };
 };

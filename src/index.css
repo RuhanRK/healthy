@@ -22,3 +22,12 @@ body {
     font-family: "Fredericka the Great", cursive;
     color: #ececec !important;
 }
+
+.list-group-item:hover {
+    cursor: pointer !important;
+    background-color: #eee !important;
+}
+
+.form-group {
+    margin-bottom: 0 !important;
+}
