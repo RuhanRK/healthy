@@ -1,15 +1,19 @@
 import React, { Component } from "react";
-import { Switch, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 import NavBar from "./components/Navbar";
 import MainContainer from "./components/MainContainer";
+import AllFood from "./components/AllFood";
 
 class App extends Component {
     render() {
         return (
             <React.Fragment>
                 <NavBar />
-                <MainContainer />
+                <Switch>
+                    <Route path="/" exact component={MainContainer} />
+                    <Route path="/details" component={AllFood} />
+                </Switch>
             </React.Fragment>
         );
     }
