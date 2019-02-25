@@ -13,7 +13,7 @@ class App extends Component {
                 <Container>
                     <Row>
                         <Col />
-                        <Col sm={12} md={12} lg={6}>
+                        <Col sm={12} md={10} lg={8} xl={6}>
                             <SearchBox />
                             <FoodBox />
                         </Col>

@@ -1,44 +1,45 @@
 import React from "react";
-import { Media, Badge } from "react-bootstrap";
+import { Media, Badge, Row, Col } from "react-bootstrap";
 
-const BoxText = () => {
+const BoxText = ({ selectedFood }) => {
+    const { body, calroie, fat, img, ingredients, title } = selectedFood;
     return (
         <React.Fragment>
-            <img
-                width={150}
-                height={150}
-                className="align-self-center mr-3 rounded"
-                src="https://picsum.photos/200/200"
-                alt="Generic placeholder"
-            />
-            <Media.Body>
-                <span className="float-right text-muted">
-                    <sup>*</sup>100gm base value
-                </span>
-                <h5 className="font-weight-bold">Media Heading</h5>
-                <p className="lead text-capitalize">
-                    <Badge variant="secondary">Calories</Badge>{" "}
-                    <Badge variant="success">120</Badge>
-                </p>
-                <p className="lead text-capitalize">
-                    <Badge variant="secondary">Fat</Badge>{" "}
-                    <Badge variant="warning">12 g</Badge>
-                </p>
-                <p className="lead text-capitalize">
-                    <Badge variant="info">Ingredients</Badge> {"  "}
-                    <span>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit.
-                    </span>
-                </p>
-                <p className="lead text-capitalize">
-                    <Badge variant="info">Description</Badge> {"  "}
-                    <span>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit.
-                    </span>
-                </p>
-            </Media.Body>
+            <Row>
+                <Col sm={12} md={4} className="align-self-center text-center">
+                    <img
+                        width={150}
+                        height={150}
+                        className="mr-3 rounded"
+                        src={`./${img}`}
+                        alt="Generic placeholder"
+                    />
+                </Col>
+                <Col>
+                    <Media.Body>
+                        <span className="float-right text-muted">
+                            <sup>*</sup>100gm base value
+                        </span>
+                        <h5 className="font-weight-bold">{title}</h5>
+                        <p className="text-dark font-weight-bold text-capitalize">
+                            <Badge variant="secondary">Calories</Badge>{" "}
+                            <Badge variant="success">{calroie}</Badge>
+                        </p>
+                        <p className="text-dark font-weight-bold text-capitalize">
+                            <Badge variant="secondary">Fat</Badge>{" "}
+                            <Badge variant="warning">{fat} g</Badge>
+                        </p>
+                        <p className="text-dark font-weight-bold text-capitalize">
+                            <Badge variant="info">Ingredients</Badge> {"  "}
+                            <span>{ingredients}</span>
+                        </p>
+                        <p className="text-dark font-weight-bold text-capitalize">
+                            <Badge variant="info">Description</Badge> {"  "}
+                            <span>{body}</span>
+                        </p>
+                    </Media.Body>
+                </Col>
+            </Row>
         </React.Fragment>
     );
 };
