@@ -2,7 +2,7 @@ import React from "react";
 import { Media, Badge, Row, Col } from "react-bootstrap";
 
 const BoxText = ({ selectedFood }) => {
-    const { body, calroie, fat, img, ingredients, title } = selectedFood;
+    const { body, calroie, fat, img, ingredients, title, link } = selectedFood;
     return (
         <React.Fragment>
             <Row>
@@ -41,6 +41,14 @@ const BoxText = ({ selectedFood }) => {
                             <Badge variant="info">Description</Badge> {"  "}
                             <span>{body}</span>
                         </p>
+                        <a
+                            href={link}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            className="badge float-right badge-primary"
+                        >
+                            Source
+                        </a>
                     </Media.Body>
                 </Col>
             </Row>

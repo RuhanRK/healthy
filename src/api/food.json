@@ -7,6 +7,7 @@
             "calroie": "312",
             "ingredients": "Potatoes, Vegetable Oil, Citric Acid [Preservative]), etc",
             "img": "images/french-fries.jpg",
+            "link": "https://www.nutritionix.com/food/french-fries",
             "id": 1
         },
         {
@@ -16,6 +17,7 @@
             "calroie": "290",
             "ingredients": "Meat trimmings and fat,salt, garlic, and paprika, etc",
             "img": "images/hot-dogs.jpg",
+            "link": "https://www.nutritionix.com/search?q=Hot%20Dogs",
             "id": 2
         },
         {
@@ -25,6 +27,7 @@
             "calroie": "541",
             "ingredients": "pork, water, potassium lactate, salt, sugar, sodium phosphate, sodium diacetate, sodium erythorbate, sodium nitrite, smoke.",
             "img": "images/bacon.jpg",
+            "link": "https://www.nutritionix.com/search?q=Bacon",
             "id": 3
         },
         {
@@ -34,6 +37,7 @@
             "calroie": "375",
             "ingredients": "salt, artificial butter flavor,etc",
             "img": "images/theatre-popcorn.jpg",
+            "link": "https://www.nutritionix.com/search?q=Theatre%20Popcorn",
             "id": 4
         },
         {
@@ -43,6 +47,7 @@
             "calroie": "412",
             "ingredients": "GLYCERIN, STRAWBERRIES, WHITE GRAPE JUICE CONCENTRATE, WATER, MODIFIED TAPIOCA STARCH, PECTIN, CITRIC ACID, etc",
             "img": "images/toaster-pastries.jpg",
+            "link": "https://www.nutritionix.com/search?q=Toaster%20Pastries",
             "id": 5
         },
         {
@@ -52,6 +57,7 @@
             "calroie": "266",
             "ingredients": "Fresh Dough. Unbleached enriched wheat flour, water, sugar, soybean oil, salt, yeast, etc",
             "img": "images/pizza.jpg",
+            "link": "https://www.nutritionix.com/search?q=Pizza",
             "id": 6
         },
         {
@@ -61,6 +67,7 @@
             "calroie": "471",
             "ingredients": "whole rolled oats, almonds, sunflower seeds,etc",
             "img": "images/granola.jpg",
+            "link": "https://www.nutritionix.com/search?q=Granola",
             "id": 7
         },
         {
@@ -70,6 +77,7 @@
             "calroie": "350",
             "ingredients": "Flour, Niacin, Reduced Iron, Thiamine Mononitrate, etc",
             "img": "images/wraps.jpg",
+            "link": "https://www.nutritionix.com/search?q=Wraps",
             "id": 8
         },
         {
@@ -79,6 +87,7 @@
             "calroie": "42",
             "ingredients": "Whole Milk, Pure Cane Sugar, Moaroma Chocolate Power , etc",
             "img": "images/whole-milk.jpg",
+            "link": "https://www.nutritionix.com/search?q=Whole%20Milk",
             "id": 9
         },
         {
@@ -88,6 +97,7 @@
             "calroie": "42",
             "ingredients": "Coca-Cola (Classic) Carbonated water, high fructose corn syrup",
             "img": "images/drinks.jpg",
+            "link": "https://www.nutritionix.com/search?q=Sodas%20And%20Sweet%20Drinks",
             "id": 10
         },
         {
@@ -97,6 +107,7 @@
             "calroie": "207",
             "ingredients": "milk solids-not-fat (skim-milk powder), sugar, gelatin (or other suitable stabilizer), egg and flavouring,etc",
             "img": "images/ice-cream.jpg",
+            "link": "https://www.nutritionix.com/search?q=Ice%20Cream",
             "id": 11
         },
         {
@@ -106,6 +117,7 @@
             "calroie": "41",
             "ingredients": "Carbonated water,Sugar ,Caffeine,etc",
             "img": "images/coke.jpg",
+            "link": "https://www.nutritionix.com/search?q=Coke",
             "id": 12
         },
         {
@@ -115,6 +127,7 @@
             "calroie": "54",
             "ingredients": "Water, high fructose corn syrup, citric acid, natural and artificial flavors, pectin, acacia gum, etc",
             "img": "images/fruit-juice.jpg",
+            "link": "https://www.nutritionix.com/search?q=Fruit%20Juice",
             "id": 13
         },
         {
@@ -124,6 +137,7 @@
             "calroie": "245",
             "ingredients": "Sugar,baking powder,salt,eggs,etc",
             "img": "images/cake.jpg",
+            "link": "https://www.nutritionix.com/search?q=Cake",
             "id": 14
         },
         {
@@ -133,6 +147,7 @@
             "calroie": "414",
             "ingredients": "Soy Protein Isolate. Sara Deeter,Calcium Caseinate. Grace Ling,etc",
             "img": "images/p-bar.jpg",
+            "link": "https://www.nutritionix.com/search?q=Protein%20bar",
             "id": 15
         }
     ]
