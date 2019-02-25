@@ -14,6 +14,10 @@ const SearchBox = props => {
         // get input value
         const value = e.target.value;
 
+        if (value.length <= 0) {
+            props.foodNotFound(false);
+        }
+
         let suggestion = [];
 
         // get all food name from foods database
@@ -48,7 +52,7 @@ const SearchBox = props => {
                 // clear input field
                 setText("");
             } else {
-                props.foodNotFound();
+                props.foodNotFound(true);
             }
         }
 

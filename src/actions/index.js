@@ -11,8 +11,9 @@ export const selectFood = food => {
 };
 
 // SET FOOD NOT FOUND
-export const foodNotFound = () => {
+export const foodNotFound = value => {
     return {
-        type: actions.FOOD_NOT_FOUND
+        type: actions.FOOD_NOT_FOUND,
+        payload: value
     };
 };
