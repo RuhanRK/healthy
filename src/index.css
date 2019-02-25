@@ -31,3 +31,33 @@ body {
 .form-group {
     margin-bottom: 0 !important;
 }
+
+/* style for not found text box */
+
+blockquote {
+    color: rgba(29, 26, 21, 0.6);
+    font-family: Tahoma, sans-serif;
+    font-size: 1.2rem;
+    width: 60%;
+    margin: 0 auto;
+}
+
+blockquote p {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+blockquote p::before,
+blockquote p::after {
+    content: "“";
+    font-family: Georgia;
+    font-size: 8rem;
+    margin: -2rem 0 0 -4rem;
+    position: absolute;
+    opacity: 0.5;
+}
+
+blockquote p::after {
+    content: "”";
+    margin: -1rem -4rem 0 0;
+}
