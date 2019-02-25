@@ -9,3 +9,10 @@ export const selectFood = food => {
         payload: food
     };
 };
+
+// SET FOOD NOT FOUND
+export const foodNotFound = () => {
+    return {
+        type: actions.FOOD_NOT_FOUND
+    };
+};

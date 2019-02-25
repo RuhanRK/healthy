@@ -3,7 +3,7 @@ import { Form } from "react-bootstrap";
 import { connect } from "react-redux";
 
 import AutoCompleteBox from "./AutoCompleteBox";
-import { selectFood } from "./../actions";
+import { selectFood, foodNotFound } from "./../actions";
 
 const SearchBox = props => {
     const [text, setText] = useState("");
@@ -45,8 +45,13 @@ const SearchBox = props => {
             // check selectedFood is available
             if (selectedFood[0]) {
                 props.selectFood(selectedFood[0]);
+            } else {
+                props.foodNotFound();
             }
         }
+
+        // clear suggetion box
+        setSuggestions([]);
     };
 
     const suggestionSelected = value => {
@@ -84,11 +89,12 @@ const SearchBox = props => {
     );
 };
 
+// get foods from store state
 const mapStateToProps = state => ({
     foods: state.foods
 });
 
 export default connect(
     mapStateToProps,
-    { selectFood }
+    { selectFood, foodNotFound }
 )(SearchBox);
