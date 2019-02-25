@@ -1,25 +1,15 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Switch, Link } from "react-router-dom";
 
 import NavBar from "./components/Navbar";
-import SearchBox from "./components/SearchBox";
-import FoodBox from "./components/FoodBox";
+import MainContainer from "./components/MainContainer";
 
 class App extends Component {
     render() {
         return (
             <React.Fragment>
                 <NavBar />
-                <Container>
-                    <Row>
-                        <Col />
-                        <Col sm={12} md={10} lg={8} xl={6}>
-                            <SearchBox />
-                            <FoodBox />
-                        </Col>
-                        <Col />
-                    </Row>
-                </Container>
+                <MainContainer />
             </React.Fragment>
         );
     }
