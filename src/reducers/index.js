@@ -1,6 +1,6 @@
 import _ from "lodash";
 
-import food from "./../api/food.json";
+import food from "./../database/food.json";
 import * as actions from "../actions/actions";
 
 const initialState = {
