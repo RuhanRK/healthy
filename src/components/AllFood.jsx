@@ -23,7 +23,7 @@ const AllFood = ({ foods, handleShort, sortColumn }) => {
     };
     return (
         <React.Fragment>
-            <Row>
+            <Row style={{ margin: "0", padding: "0" }}>
                 <Col />
                 <Col sm={12} md={6} className="mb-5">
                     <div className="shadow p-3  m-auto bg-white rounded">

@@ -62,7 +62,30 @@ blockquote p::after {
     margin: -1rem -4rem 0 0;
 }
 
+/* set magin bottom of navbar p  to 0*/
+.nav-bg p {
+    margin-bottom: 0 !important;
+}
+
+/* Icon details for navbar*/
+.nav-bg .fas,
+.nav-bg p,
+.nav-bg p a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.nav-bg .details a {
+    font-size: 1.2rem;
+}
+
 /* responsive ness */
+
+@media (max-width: 768px) {
+    .nav-bg {
+        padding: 1rem 0 !important;
+    }
+}
 
 @media (max-width: 560px) {
     body {
