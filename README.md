@@ -59,6 +59,14 @@ Basic feature of the application should include:
 
 ---
 
+### For Serve this project you have to Download this project and run below command
+
+`npm install` or `yarn install`
+and
+`npm start` or `yarn start`
+
+---
+
 ### Libararies I Have used
 
 1. [Lodash](https://lodash.com/) - For Sorting
