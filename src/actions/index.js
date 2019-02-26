@@ -17,3 +17,11 @@ export const foodNotFound = value => {
         payload: value
     };
 };
+
+// HANDLE SHORT METHOD
+export const handleShort = path => {
+    return {
+        type: actions.HANDLE_SHORT,
+        payload: path
+    };
+};

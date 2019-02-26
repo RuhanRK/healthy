@@ -1,10 +1,16 @@
+import _ from "lodash";
+
 import food from "./../api/food.json";
 import * as actions from "../actions/actions";
 
 const initialState = {
     foods: food.posts,
     selectedFood: null,
-    foodNotFound: false
+    foodNotFound: false,
+    sortColumn: {
+        path: "title",
+        order: "asc"
+    }
 };
 
 const foodReducer = (state = initialState, action) => {
@@ -20,6 +26,25 @@ const foodReducer = (state = initialState, action) => {
                 ...state,
                 foodNotFound: action.payload,
                 selectedFood: null
+            };
+        case actions.HANDLE_SHORT:
+            const sortColumn = { ...state.sortColumn };
+            const sortedFoods = _.orderBy(
+                state.foods,
+                [sortColumn.path],
+                [sortColumn.order]
+            );
+            if (sortColumn.path === action.payload) {
+                sortColumn.order = sortColumn.order === "asc" ? "desc" : "asc";
+            } else {
+                sortColumn.path = action.payload;
+                sortColumn.order = "asc";
+            }
+
+            return {
+                ...state,
+                foods: sortedFoods,
+                sortColumn
             };
         default:
             return state;

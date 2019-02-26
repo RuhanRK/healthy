@@ -2,7 +2,7 @@ import React from "react";
 import { Media, Badge, Row, Col } from "react-bootstrap";
 
 const BoxText = ({ selectedFood }) => {
-    const { body, calroie, fat, img, ingredients, title, link } = selectedFood;
+    const { body, calorie, fat, img, ingredients, title, link } = selectedFood;
     return (
         <React.Fragment>
             <Row>
@@ -27,7 +27,7 @@ const BoxText = ({ selectedFood }) => {
                         <h5 className="font-weight-bold">{title}</h5>
                         <p className="text-dark font-weight-bold text-capitalize">
                             <Badge variant="secondary">Calories</Badge>{" "}
-                            <Badge variant="success">{calroie}</Badge>
+                            <Badge variant="success">{calorie}</Badge>
                         </p>
                         <p className="text-dark font-weight-bold text-capitalize">
                             <Badge variant="secondary">Fat</Badge>{" "}
