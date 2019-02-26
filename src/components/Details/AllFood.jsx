@@ -2,18 +2,18 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { Row, Col, Table } from "react-bootstrap";
 
-import { handleShort } from "../../actions";
+import { handleSort } from "../../actions";
 import THead from "./tHead";
 
-const AllFood = ({ foods, handleShort, sortColumn }) => {
+const AllFood = ({ foods, handleSort, sortColumn }) => {
     // initialy sort data with name asc order
     useEffect(() => {
-        handleShort("title");
+        handleSort("title");
     }, []);
 
     // handle click for table header
     const handleClick = value => {
-        handleShort(value);
+        handleSort(value);
     };
 
     // render sort icon depend on sorting method
@@ -84,5 +84,5 @@ const mapStateToProps = state => ({
 
 export default connect(
     mapStateToProps,
-    { handleShort }
+    { handleSort }
 )(AllFood);

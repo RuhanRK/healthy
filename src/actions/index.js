@@ -19,7 +19,7 @@ export const foodNotFound = value => {
 };
 
 // HANDLE SHORT METHOD
-export const handleShort = path => {
+export const handleSort = path => {
     return {
         type: actions.HANDLE_SHORT,
         payload: path
