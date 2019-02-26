@@ -25,7 +25,7 @@ const AllFood = ({ foods, handleShort, sortColumn }) => {
         <React.Fragment>
             <Row style={{ margin: "0", padding: "0" }}>
                 <Col />
-                <Col sm={12} md={6} className="mb-5">
+                <Col sm={10} md={6} className="mb-5">
                     <div className="shadow p-3  m-auto bg-white rounded">
                         <h3 className="text-center">All Food Details</h3>
                         <span className="float-right text-muted">
