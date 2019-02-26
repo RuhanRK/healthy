@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel|Fredericka+the+Great");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +13,7 @@ body {
     width: 100vw;
     background: #f3f4f7 url("./imgs/healthy.svg") no-repeat center center /
         contain;
-    font-family: "Cinzel", serif;
+    font-family: "Roboto Mono", monospace;
 }
 
 .nav-bg {
@@ -91,6 +93,12 @@ blockquote p::after {
 @media (max-width: 768px) {
     .nav-bg {
         padding: 1rem 0 !important;
+    }
+    .form-group input {
+        padding: 2rem !important;
+    }
+    .media-body p {
+        font-size: 18px !important;
     }
 }
 
