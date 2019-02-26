@@ -26,7 +26,12 @@ const AllFood = ({ foods, handleShort, sortColumn }) => {
     return (
         <React.Fragment>
             <Row style={{ margin: "0", padding: "0" }}>
-                <Col />
+                <Col>
+                    <div className="alert alert-success" role="alert">
+                        You Can Sort List By Clicking Each Header Title of this
+                        Table :)
+                    </div>
+                </Col>
                 <Col sm={10} md={6} className="mb-5">
                     <div className="shadow p-3  m-auto bg-white rounded">
                         <h3 className="text-center">All Food Details</h3>
