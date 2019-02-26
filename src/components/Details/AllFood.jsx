@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { Row, Col, Table } from "react-bootstrap";
 
-import { handleShort } from "./../actions";
+import { handleShort } from "../../actions";
+import THead from "./tHead";
 
 const AllFood = ({ foods, handleShort, sortColumn }) => {
     // initialy sort data with name asc order
@@ -15,6 +16,7 @@ const AllFood = ({ foods, handleShort, sortColumn }) => {
         handleShort(value);
     };
 
+    // render sort icon depend on sorting method
     const renderSortIcon = column => {
         if (column !== sortColumn.path) return null;
         if (sortColumn.order === "asc")
@@ -34,18 +36,21 @@ const AllFood = ({ foods, handleShort, sortColumn }) => {
                         <Table bordered hover>
                             <thead>
                                 <tr>
-                                    <th onClick={() => handleClick("title")}>
-                                        Name
-                                        {renderSortIcon("title")}
-                                    </th>
-                                    <th onClick={() => handleClick("calorie")}>
-                                        Calories
-                                        {renderSortIcon("calorie")}
-                                    </th>
-                                    <th onClick={() => handleClick("fat")}>
-                                        Fat
-                                        {renderSortIcon("fat")}
-                                    </th>
+                                    <THead
+                                        handleClick={handleClick}
+                                        renderSortIcon={renderSortIcon}
+                                        name={"title"}
+                                    />
+                                    <THead
+                                        handleClick={handleClick}
+                                        renderSortIcon={renderSortIcon}
+                                        name={"calorie"}
+                                    />
+                                    <THead
+                                        handleClick={handleClick}
+                                        renderSortIcon={renderSortIcon}
+                                        name={"fat"}
+                                    />
                                 </tr>
                             </thead>
                             <tbody>

@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 
 import NavBar from "./components/Navbar";
 import MainContainer from "./components/MainContainer";
-import AllFood from "./components/AllFood";
+import AllFood from "./components/Details/AllFood";
 
 class App extends Component {
     render() {
