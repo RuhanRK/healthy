@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 
 import NavBar from "./components/Navbar";
 import MainContainer from "./components/MainContainer";
 import AllFood from "./components/Details/AllFood";
+import NotFoundPage from "./components/NotFoundPage";
 
 class App extends Component {
     render() {
@@ -13,6 +14,8 @@ class App extends Component {
                 <Switch>
                     <Route path="/" exact component={MainContainer} />
                     <Route path="/details" component={AllFood} />
+                    <Route path="/not-found" component={NotFoundPage} />
+                    <Redirect to="/not-found" />
                 </Switch>
             </React.Fragment>
         );
