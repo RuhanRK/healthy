@@ -75,3 +75,7 @@ blockquote p::after {
         margin-bottom: 1.5rem !important;
     }
 }
+
+th {
+    cursor: pointer !important;
+}

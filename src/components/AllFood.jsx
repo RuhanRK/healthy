@@ -4,7 +4,7 @@ import { Row, Col, Table } from "react-bootstrap";
 
 import { handleShort } from "./../actions";
 
-const AllFood = ({ foods, handleShort }) => {
+const AllFood = ({ foods, handleShort, sortColumn }) => {
     // initialy sort data with name asc order
     useEffect(() => {
         handleShort("title");
@@ -13,6 +13,13 @@ const AllFood = ({ foods, handleShort }) => {
     // handle click for table header
     const handleClick = value => {
         handleShort(value);
+    };
+
+    const renderSortIcon = column => {
+        if (column !== sortColumn.path) return null;
+        if (sortColumn.order === "asc")
+            return <i className="fas fa-sort-down" />;
+        return <i className="fas fa-sort-up" />;
     };
     return (
         <React.Fragment>
@@ -29,12 +36,15 @@ const AllFood = ({ foods, handleShort }) => {
                                 <tr>
                                     <th onClick={() => handleClick("title")}>
                                         Name
+                                        {renderSortIcon("title")}
                                     </th>
                                     <th onClick={() => handleClick("calorie")}>
                                         Calories
+                                        {renderSortIcon("calorie")}
                                     </th>
                                     <th onClick={() => handleClick("fat")}>
                                         Fat
+                                        {renderSortIcon("fat")}
                                     </th>
                                 </tr>
                             </thead>
@@ -58,7 +68,8 @@ const AllFood = ({ foods, handleShort }) => {
 
 // Get ALl foods
 const mapStateToProps = state => ({
-    foods: state.foods
+    foods: state.foods,
+    sortColumn: state.sortColumn
 });
 
 export default connect(
