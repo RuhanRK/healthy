@@ -5,7 +5,7 @@ const NavBar = () => {
     return (
         <React.Fragment>
             <Navbar className="mb-3 p-0 nav-bg justify-content-around flex-column flex-md-row ">
-                <p className="">
+                <p className="home">
                     <Link to="/">
                         <i className="fas fa-home fa-2x" />
                     </Link>

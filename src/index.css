@@ -79,6 +79,13 @@ blockquote p::after {
     font-size: 1.2rem;
 }
 
+.home,
+.details {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 1.5rem;
+    box-shadow: inset 0 0 50px rgba(204, 204, 204, 0.411);
+}
+
 /* responsive ness */
 
 @media (max-width: 768px) {
