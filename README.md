@@ -66,3 +66,10 @@ Basic feature of the application should include:
 3. [Enzyme](https://airbnb.io/enzyme/)
 4. [Enzyme-Adapter](https://www.npmjs.com/package/enzyme-adapter-react-16)
 5. [Redux](https://redux.js.org/)
+
+---
+
+#Which websites Helps me to get those datas
+
+1. https://www.nutritionix.com/
+2. https://ndb.nal.usda.gov/ndb/
